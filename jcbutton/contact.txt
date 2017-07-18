@@ -1,0 +1,7 @@
+Title:      JC button
+Function:   An ownerdrawn multistyle button
+Author:     Juned Chhipa
+Created:    November 2008
+Contact me: juned.chhipa@yahoo.com
+
+Copyright © 2008-2009 Juned Chhipa. All rights reserved.

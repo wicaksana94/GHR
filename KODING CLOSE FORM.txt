@@ -1,0 +1,24 @@
+Private Sub Form_QueryUnload(Cancel As Integer, UnloadMode As Integer)
+'perintah ini ketika melakukan unload me maka akan diarahkan pada msgbox ini.
+Dim tanya As String
+tanya = "Apakah anda yakin?"
+If MsgBox(tanya, vbQuestion + vbYesNo + vbDefaultButton2) = vbYes Then
+Call Form_Unload(1) ' nilai 1 = true
+Else: Cancel = True
+End If
+End Sub
+
+Public Sub UnloadAllForms()
+Dim Form As Form
+For Each Form In Forms
+Unload Form
+Set Form = Nothing
+Next Form
+End Sub
+ 
+Private Sub Form_Unload(Cancel As Integer)
+'menempatkan form untuk ditutup
+Unload Form1
+Unload Me
+UnloadAllForms
+End Sub
